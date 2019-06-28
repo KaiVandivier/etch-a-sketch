@@ -4,13 +4,15 @@ body {
 }
 
 #reset {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 #grid-container {
-  width: 100%;
+  width: 960px;
+  height: 960px;
   display: grid;
-  grid-template: repeat(16, 60px) / repeat(16, 60px);
+  /* grid-template: repeat(16, 60px) / repeat(16, 60px); */
   grid-gap: 1px;
 }
 

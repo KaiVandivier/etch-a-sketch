@@ -3,7 +3,8 @@ function drawScreen(edgeLength) {
   const body = document.querySelector('body');
   const gridContainer = document.createElement('div');
   gridContainer.setAttribute('id', 'grid-container');
-  // TODO: set grid styles to fit right
+  gridContainer.style.gridTemplateColumns = `repeat(${edgeLength}, 1fr)`;
+  gridContainer.style.gridTemplateRows = `repeat(${edgeLength}, 1fr)`;
   for (i=0; i<(edgeLength ** 2); i++) {
     const newSquare = document.createElement('div');
     newSquare.classList.add('square');
