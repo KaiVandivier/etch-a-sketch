@@ -1,0 +1,19 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#reset {
+  text-align: center;
+}
+
+#grid-container {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(16, 60px) / repeat(16, 60px);
+  grid-gap: 1px;
+}
+
+.square {
+  background-color: pink;
+}
